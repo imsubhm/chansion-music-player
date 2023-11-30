@@ -1,0 +1,40 @@
+.bg-player {
+  background-color: #fffdfd;
+  opacity: 1;
+  background-image: radial-gradient(circle at center center, #72f872b0, #fffdfd),
+    repeating-radial-gradient(
+      circle at top left,
+      #f5fff5,
+      #dedada8f,
+      40px,
+      transparent 80px,
+      transparent 40px
+    );
+  background-blend-mode: multiply;
+  width: calc(100% - 100px);
+  height: 100%;
+  overflow-y: auto;
+}
+
+.left-player-body {
+  width: 68%;
+  margin-right: 2%;
+  height: 100%;
+}
+
+.right-player-body {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Responsive */
+
+@media (max-width: 795px) {
+  .bg-player {
+    flex-direction: column;
+    align-items: center;
+  }
+}
