@@ -2,7 +2,7 @@ import axios from "axios";
 
 const authEndpoint = "https://accounts.spotify.com/authorize?";
 const clientId = "71c685c239c04b4fb1491e345408e5ad";
-const redirectUrl = "http://localhost:3000/library";
+const redirectUrl = "https://chansion-music-player.vercel.app/library";
 const scopes = ["user-library-read", "playlist-read-private"];
 
 export const loginEndpoint = `${authEndpoint}client_id=${clientId}&redirect_uri=${redirectUrl}&scope=${scopes.join(
