@@ -103,9 +103,11 @@ export default function AudioPLayer({
   });
 
   const getInitialSize = (width) => {
-    if (width < 420) {
+    if (width < 300) {
+      return 150;
+    } else if (width >= 300 && width < 420) {
       return 200;
-    } else if (width >= 420 && width < 550) {
+    } lse if (width >= 420 && width < 550) {
       return 250;
     } else if (width >= 550 && width < 680) {
       return 300;
