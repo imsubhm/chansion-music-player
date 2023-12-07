@@ -108,8 +108,8 @@ export default function AudioPLayer({
     } else if (width >= 420 && width < 550) {
       return 250;
     } else if (width >= 550 && width < 680) {
-      return 300;} 
-    else if (width >= 680 && width < 795) {
+      return 300;
+    } else if (width >= 680 && width < 795) {
       return 400;
     } else if (width >= 795 && width < 953) {
       return 450;
