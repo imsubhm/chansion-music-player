@@ -107,7 +107,7 @@ export default function AudioPLayer({
       return 150;
     } else if (width >= 300 && width < 420) {
       return 200;
-    } lse if (width >= 420 && width < 550) {
+    } else if (width >= 420 && width < 550) {
       return 250;
     } else if (width >= 550 && width < 680) {
       return 300;
